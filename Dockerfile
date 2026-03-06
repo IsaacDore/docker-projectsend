@@ -12,22 +12,22 @@ LABEL maintainer="TheSpad"
 RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    php84-bcmath \
-    php84-bz2 \
-    php84-cli \
-    php84-dom \
-    php84-gd \
-    php84-gettext \
-    php84-gmp \
-    php84-ldap \
-    php84-mysqli \
-    php84-pdo \
-    php84-pdo_dblib \
-    php84-pdo_mysql \
-    php84-pecl-apcu \
-    php84-pecl-memcached \
-    php84-soap \
-    php84-xmlreader && \
+    php83-bcmath \
+    php83-bz2 \
+    php83-cli \
+    php83-dom \
+    php83-gd \
+    php83-gettext \
+    php83-gmp \
+    php83-ldap \
+    php83-mysqli \
+    php83-pdo \
+    php83-pdo_dblib \
+    php83-pdo_mysql \
+    php83-pecl-apcu \
+    php83-pecl-memcached \
+    php83-soap \
+    php83-xmlreader && \
   echo "**** install projectsend ****" && \
   mkdir -p /app/www/public && \
   if [ -z ${PROJECTSEND_VERSION+x} ]; then \
